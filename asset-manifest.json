@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/you-tell-i-do/static/css/main.30afff53.css",
-    "main.js": "/you-tell-i-do/static/js/main.328bb245.js",
+    "main.js": "/you-tell-i-do/static/js/main.b3fa0f89.js",
     "index.html": "/you-tell-i-do/index.html",
     "main.30afff53.css.map": "/you-tell-i-do/static/css/main.30afff53.css.map",
-    "main.328bb245.js.map": "/you-tell-i-do/static/js/main.328bb245.js.map"
+    "main.b3fa0f89.js.map": "/you-tell-i-do/static/js/main.b3fa0f89.js.map"
   },
   "entrypoints": [
     "static/css/main.30afff53.css",
-    "static/js/main.328bb245.js"
+    "static/js/main.b3fa0f89.js"
   ]
 }
