@@ -95,6 +95,10 @@ class MasterPage extends Component {
         
     }
 
+    onClickLogout=()=>{
+        const {history} = this.props
+        history.replace("/masterlogin")
+    }
 
     render(){
         const {answer}=this.state
@@ -122,6 +126,9 @@ class MasterPage extends Component {
                 <button className="resultButton" type="button" onClick={this.onClickGetResult}>Result</button>
                 <div className="resultContainer">
                     <h1 className="resultHeading"> Answer : <span className="resultSpan">{answer}</span></h1>
+                </div>
+                <div className="logoutButtonContainer">
+                    <button className="logoutButton" type="button" onClick={this.onClickLogout}>Logout</button>
                 </div>
             </div>
         )

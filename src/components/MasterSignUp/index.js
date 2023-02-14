@@ -32,7 +32,7 @@ class MasterSignUp extends Component {
             todoList.push(userDetials)
             localStorage.setItem("todoList",JSON.stringify(todoList))
             
-            history.replace("/signupsuccessful")
+            history.replace("/masterlogin")
         }else{
             alert("Enter valid details and sign up")
         }

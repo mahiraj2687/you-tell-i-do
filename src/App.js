@@ -10,7 +10,7 @@ import './App.css';
 
 const App =()=> (
   <Switch>
-    <Route exact path="/" component={Home}/>
+    <Route exact path="/you-tell-i-do" component={Home}/>
     <Route exact path="/mastersignup" component={MasterSignUp}/>
     <Route exact path="/masterlogin" component={MasterLogin}/>
     <Route exact path="/masterpage" component={MasterPage}/>

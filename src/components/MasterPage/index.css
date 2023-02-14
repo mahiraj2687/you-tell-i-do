@@ -103,9 +103,18 @@
 }
 .resultButton{
     color:white;
-    background-color:rgb(164, 27, 27);
+    background-color:green;
     border-radius:10px;
     height:35px;
     width:30%;
     margin:15px;
+}
+.logoutButton{
+    color:white;
+    background-color:red;
+    border-radius:10px;
+    height:35px;
+    width:100%;
+    margin:15px;
+
 }

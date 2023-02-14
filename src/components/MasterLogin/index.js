@@ -1,5 +1,5 @@
 import {Component} from "react"
-import {Link} from "react-router-dom"
+import {Redirect} from "react-router-dom"
 import "./index.css"
 
 
@@ -35,9 +35,11 @@ class MasterLogin extends Component {
 
         if (isUserFound){
             const {history} =this.props
-            history.push("/masterpage")
+            history.replace("/masterpage")
         }else{
-            alert("UserNotFound")
+            const {history} =this.props
+            alert("user not found sign up to continue")
+            history.replace("/mastersignup")
         }
 
     }
@@ -58,7 +60,6 @@ class MasterLogin extends Component {
                 <button className="signinButton" onClick={this.onLogin}>Log in</button>
                 </div>
             </form>
-            <p className="requestLogin"> If you have already have an account <Link to="/masterlogin"><span className="login">login here</span></Link></p>
         </div>
     )
 }

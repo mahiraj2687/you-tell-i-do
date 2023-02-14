@@ -39,7 +39,6 @@ class StudentSignUp extends Component {
 
         
     }
-
     render(){
         const{userInput,passwordInput}=this.state
     return (

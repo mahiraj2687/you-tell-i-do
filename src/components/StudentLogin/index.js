@@ -1,5 +1,5 @@
 import {Component} from "react"
-import {Link} from "react-router-dom"
+import {Redirect} from "react-router-dom"
 import "./index.css"
 
 
@@ -35,9 +35,11 @@ class StudentLogin extends Component {
 
         if (isUserFound){
             const {history} =this.props
-            history.push("/studentpage")
+            history.replace("/studentpage")
         }else{
-            alert("User Not Found Please Enter Valid Details")
+            const {history} =this.props
+            alert("user not found sign up to continue")
+            history.replace("/studentsignup")
         }
 
     }
@@ -48,7 +50,7 @@ class StudentLogin extends Component {
         const{userInput,passwordInput}=this.state
     return (
         <div className="student_login_container">
-            <h1 className="signupsuccess">Login here to Continue</h1>
+            <h1 className="signupsuccess">Login here to Continue...</h1>
             <form  className="form" id="form">
                 <label  className="label" for="userName">User Name</label>
                 <input className="input" id="userName" value={userInput} onChange={this.onChangeUserName} type="text" placeholder="Enter Your User Name"/>
@@ -58,7 +60,6 @@ class StudentLogin extends Component {
                 <button className="signinButton" onClick={this.onLogin}>Log in</button>
                 </div>
             </form>
-            <p className="requestLogin"> If you have already have an account <Link to="studentlogin"><span className="login">login here</span></Link></p>
         </div>
     )
 }
